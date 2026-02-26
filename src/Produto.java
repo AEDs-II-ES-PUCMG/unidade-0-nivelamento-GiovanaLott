@@ -32,7 +32,7 @@ public class Produto {
      * @param precoCusto Preço do produto (mínimo 0.01)
      * @param margemLucro Margem de lucro (mínimo 0.01)
      */
-	public Produto(String desc, double precoCusto, double margemLucro) {
+	public abstract Produto(String desc, double precoCusto, double margemLucro) {
 		init(desc, precoCusto, margemLucro);
 	}
 	
@@ -43,7 +43,7 @@ public class Produto {
      * @param desc Descrição do produto (mínimo de 3 caracteres)
      * @param precoCusto Preço do produto (mínimo 0.01)
      */
-	public Produto(String desc, double precoCusto) {
+	public abstract Produto(String desc, double precoCusto) {
 		init(desc, precoCusto, MARGEM_PADRAO);
 	}
 	

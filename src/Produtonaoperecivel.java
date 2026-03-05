@@ -12,4 +12,13 @@ public class ProdutoNaoPerecivel extends Produto {
     public double valorDeVenda() {
         return calcularPrecoBase();
     }
+
+    @Override
+    public String gerarDadosTexto() {
+
+        return String.format("1;%s;%.2f;%.2f",
+                descricao,
+                precoCusto,
+                margemLucro);
+    }
 }
